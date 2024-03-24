@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@700&family=Style+Script&display=swap');
+
+html {
+    font-family: "Kadwa";
+    font-size: 25px;
+}
+
+html a {
+    color: black;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #E1AA74;
+    width: 100%;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body {
+    z-index: 3;
+}
+
+/* Botones Header */
+
+.headerNavegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    width: 76%;
+    height: 4.5rem;
+}
+
+.headerNavegacion div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    height: 3.125rem;
+}
+
+.barraDeNavegacion {
+    width: 12.5rem;
+    background-color: #B99470;
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.barraDeNavegacion ul {
+    display: grid;
+    grid-template-rows:repeat(7, 40px);
+    grid-gap: 20px;
+    margin: 20px 0px 120px 30px;
+}
+
+.Menu {
+    text-align: center;
+    display: block;
+    padding: .2rem .7rem .2rem .7rem;
+    margin: 1rem;
+    box-sizing: content-box;
+    width: 3.75rem;
+    height: 1.875rem;
+}   
+
+/* Botón inicio */
+.botonesBarra {
+    display: flex;
+}
+
+.botonesBarra a {
+    font-size: .8125rem;
+}
+
+.botonesBarra img {
+    margin-right: 0.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* Contacto */
+.contacto {
+    text-align: center;
+    font-size: .9375rem;
+}
+
+.contacto h3 {
+    font-size: .625rem;
+    text-align: center;
+}
+
+
+main {
+    background-image: url("../assets/Fondo.png");
+    background-position-x: 7rem;
+    background-position-y: 3.5rem;
+    background-size: 47rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+}
+
+#mainInicio {
+    height: 35.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 45% 15% ;
+    grid-template-areas:
+    ". divPresentacion ."
+    ;
+}
+
+#mainForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainMision {
+    height: 128rem;
+}
+
+#Cuenta {
+    font-size: 1.25rem;
+    height: 3.125rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+#Mision {
+    font-size: 1.25rem;
+    width: 6.25rem;
+    height: 3.125rem;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+#SDH {
+    width: 27rem;
+    height: 1.875rem-;
+    padding: 0rem 0.5rem;
+    text-align: center;
+}
+
+/* PÁGINA DE INICIO */
+p span {
+    font-family: "Style Script";
+}
+
+.divPresentacion {
+    display: flex;
+    box-shadow: 1.25rem;
+    background-color: rgba(217, 217, 217, .60);
+    border-radius: 3.4375rem;
+    width: 21.875rem;
+    margin: 1rem;
+    grid-area: divPresentacion;
+}
+
+#textoPresentacion {
+    color: black;
+    margin: 1.5rem;
+    line-height: 2rem;
+
+}
+
+p {
+    font-size: 1.175rem;
+}
+
+/*PÁGINA FORMULARIO*/
+#divForm {
+    margin: 2rem;
+    margin-left: 10rem;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    background-color: rgba(245, 204, 160, .65);
+    border-radius: 2.5rem;
+}
+
+#divForm h1 {
+    margin: auto;
+}
+
+#fondoForm {
+    background-color: rgba(245, 204, 160, .60);
+    width: 40rem;
+    height: auto;
+    border-radius: 3.125rem;
+    margin: 0rem 3rem 3rem 16rem;
+    margin-left: 16rem;
+    text-align: center;
+}
+
+
+.inputFormulario {
+    margin: 1rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    
+}
+.inputFormulario div :not(.Radios){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: .875rem;
+}
+
+.inputForm {
+    height: 2rem;
+    width: 18rem;
+    border-radius: .3125rem;
+    background-color: #FAEED1 ;
+    border-color: #B64E3E ;
+}
+
+#RR{
+    display: flex;
+    flex-direction: column;
+}
+
+#porqueRedes {
+    font-size: .625rem;
+}
+
+#porqueRedes h2 {
+    color: rgb(182, 78, 62);
+}
+
+#porqueRedes h3 {
+    color: black;
+}
+
+#botonEnviar {
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(182, 78, 62);
+    color: rgb(255, 255, 255);
+    border-radius: 1.875rem;
+    font-size: 1.5rem;
+    font-family: "Kadwa";
+}
+
+/* PÁGINA DE MISIÓN */
+#fondoMision {
+    background-color: rgba(245, 204, 160, .60);
+    width: 40rem;
+    height: 100rem;
+    border-radius: 3.125rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+#fondoMision h3 {
+    font-size: .875rem;
+}
+
+#fondoMision h1 {
+    font-size: 2.25rem;
+}
+
+#fondoMision h4 {
+    font-size: 1.075rem;
+}
+
+#noRemun {
+    color: rgb(184, 54, 34);
+}
+
+/* PÁGINA ADOPCIONES */
+.card {
+    display: inline;
+}
+
+.card section {
+    background-color: rgb(243, 240, 202);
+    border-color: rgb(182, 78, 62);
+    border-style: solid;
+    border-radius: 1.875rem;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.fotoscard {
+    margin: 2rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: .625rem;
+}
+
+.cardText h2,
+.cardText h3 {
+    display: inline;
+    margin: 1rem;
+}
+
+.cardText ul {
+    list-style: none;
+}
+
+.consultarAdopcion {
+    background-color: rgb(182, 78, 62);
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+/* PÁGINA DE CUENTA */
+#divCuenta {
+    background-color: rgba(245, 204, 160, .60);
+    width: 40rem;
+    border-radius: 3.125rem;
+}
+
+#divCuenta>section {
+    margin: 2rem;
+}
+
+#divCuenta>section>article>* {
+    font-size: 1rem;
+}
+
+#divCuenta h1 {
+    font-size: 2rem;
+}
+
+.comunicarse {
+    color: blue;
+}
+
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-areas:
+    ". tFooter .";
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    position:static;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: none;
+    z-index: 2;
+}
+
+footer div {
+    grid-area: tFooter;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoFooter {
+    color: white;
+    font-size: .75rem;
+    margin: 1.625rem 0rem;
+}
+
+                                            /* Responsive */
