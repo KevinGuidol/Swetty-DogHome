@@ -30,11 +30,6 @@ header {
     height: 4.5rem;
     position: sticky;
     top: 0;
-    z-index: 1;
-}
-
-body {
-    z-index: 3;
 }
 
 /* Botones Header */
@@ -138,7 +133,23 @@ main {
 }
 
 #mainMision {
-    height: 128rem;
+    height: auto;
+    width: 81%;
+    margin-left: 19% ;
+}
+
+#mainAdopciones {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#mainCuenta {
+    margin-left: 19%;
+    width: 81%;
+
 }
 
 #Cuenta {
@@ -205,7 +216,7 @@ p {
 #fondoForm {
     background-color: rgba(245, 204, 160, .60);
     width: 40rem;
-    height: auto;
+    height: auto;   
     border-radius: 3.125rem;
     margin: 0rem 3rem 3rem 16rem;
     margin-left: 16rem;
@@ -217,17 +228,45 @@ p {
     margin: 1rem 0rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, auto);
     column-gap: 20px;
-    row-gap: 10px;
+    row-gap: 30px;
     
 }
 .inputFormulario div :not(.Radios){
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     font-size: .875rem;
+
+}
+.inputFormDiv {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Radios input{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B64E3E;
+    background-color: white;
+    margin: 0rem 1rem;
+}
+.Radios input:checked{
+    background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
+}
+.Radios div{
+    display: block;
+}
+.Radios label{
+    padding-left: 1rem;
 }
 
 .inputForm {
@@ -238,17 +277,16 @@ p {
     border-color: #B64E3E ;
 }
 
-#RR{
-    display: flex;
-    flex-direction: column;
-}
-
 #porqueRedes {
     font-size: .625rem;
+    margin-left: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 7 ;
 }
 
 #porqueRedes h2 {
     color: rgb(182, 78, 62);
+    justify-content: center;
 }
 
 #porqueRedes h3 {
@@ -263,6 +301,12 @@ p {
     border-radius: 1.875rem;
     font-size: 1.5rem;
     font-family: "Kadwa";
+    border-style: none;
+}
+
+.enviarBoton {
+    grid-column: 2 / 3;
+    grid-row: 10 / 11;
 }
 
 /* PÁGINA DE MISIÓN */
@@ -292,68 +336,195 @@ p {
 }
 
 /* PÁGINA ADOPCIONES */
-.card {
-    display: inline;
+.selecMascota select {
+    width: 300px;
+    height: 80px;
+    background-color: #B64E3E;
+    border-radius: 60px;
+    border-style: none;
+    font-size: 0.8rem;
+    font-family: "Kadwa";
+    color: white;
+    text-align: center;
 }
-
+.card {
+    display: flex;
+    flex-direction: column;
+}
 .card section {
     background-color: rgb(243, 240, 202);
     border-color: rgb(182, 78, 62);
     border-style: solid;
-    border-radius: 1.875rem;
+    border-radius: 1.5rem;
     margin: 2rem;
-    width: 40rem;
+    width: 28rem;
+    justify-content:space-between;
 }
 
+.liDatos {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+}
+.liDatos img {
+    width: fit-content;
+    height: fit-content;
+}
 .fotoscard {
-    margin: 2rem;
-    width: 10rem;
+    margin: 2rem 0.5rem;
+    width: 6rem;
     border: 1px solid black;
     border-radius: .625rem;
 }
-
-.cardText h2,
-.cardText h3 {
-    display: inline;
-    margin: 1rem;
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cardText {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cardText h2,.cardText h3 {
+    display: block;
+    font-size: 1rem;
+    margin-left: .25rem;
 }
 
 .cardText ul {
     list-style: none;
+    display: inline;
+    margin-top: 1rem;
 }
 
 .consultarAdopcion {
     background-color: rgb(182, 78, 62);
-    width: 15rem;
-    height: 5rem;
-    font-size: 1.5rem;
-    border-top-right-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+.consultarAdopcion a {
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* PÁGINA DE CUENTA */
 #divCuenta {
+    margin: 0rem 0rem 2rem 10%;
     background-color: rgba(245, 204, 160, .60);
-    width: 40rem;
+    width: 37rem;
     border-radius: 3.125rem;
+    
 }
-
-#divCuenta>section {
-    margin: 2rem;
+#divCuenta section div , #divCuenta section form{
+    margin-left: 1rem;
 }
-
-#divCuenta>section>article>* {
+#divCuenta>section>article {
     font-size: 1rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+#divCuenta section article img{
+    width: fit-content;
+    height: fit-content;
 }
 
 #divCuenta h1 {
     font-size: 2rem;
 }
+#divCuenta h2 {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+#divCuenta h3 {
+    font-size: 0.8rem;
+}
+#nombreDomicilio {
+    display: flex;
+    flex-direction: row;
+}
 
+#divFondoCuenta div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+#cambioDomicilio {
+    text-decoration:underline;
+    color: blue;
+    font-size: 0.7rem;
+}
+#cambioContraseña {
+    background-color: rgb(182, 78, 62);
+    height: 2rem;
+    width: 12.5rem;
+    border-radius: 1rem;
+    border-style: none;
+    font-size: 1rem;
+    font-family: "Kadwa";
+    color: white;
+    margin-left: 1rem;
+}
+#cambioCorreo {
+    background-color: rgb(182, 78, 62);
+    height: 2rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border-style: none;
+    font-size: 1rem;
+    font-family: "Kadwa";
+    color: white;
+    margin-right: 1rem;
+}
+.elegirPref {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 1rem;
+}
+.elegirPref input{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B64E3E;
+    background-color: white;
+    margin: 0rem 1rem;
+}
+.elegirPref input:checked{
+    background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
+}
+
+#cambioOp {
+    text-align: center;
+}
 .comunicarse {
     color: blue;
 }
 
+#actualizarForm {
+    background-color: rgb(182, 78, 62);
+    height: 3rem;
+    width: 20rem;
+    border-radius: 1.5rem;
+    border-style: none;
+    font-size: 1.3rem;
+    font-family: "Kadwa";
+    color: white;
+    margin-right: 1rem;
+}
 
 /* Footer */
 footer {
@@ -365,9 +536,8 @@ footer {
     position: fixed;
     bottom: 0;
     position:static;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 100);
     border: none;
-    z-index: 2;
 }
 
 footer div {
@@ -386,3 +556,4 @@ footer div {
 }
 
                                             /* Responsive */
+
