@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <header>
         <div class="headerNavegacion">
+            <div id="menuResponsive">
+            </div>
             <div>
                 <a href="./mision.html" id="Mision">Misión</a>
                 <a href="./mision.html"><img src="../assets/Cat Footprint.png" alt=""></a>
             </div>
-                <a href="../index.html" id="SDH"><img src="../assets/Swetty DogHome.png" alt=""></a>
+            <a href="../index.html" id="SDH"><img src="../assets/Swetty DogHome.png" alt=""></a>
             <div>
                 <a href="./cuenta.html"><img src="../assets/User.png" alt=""></a>
                 <a href="./cuenta.html" id="Cuenta">Cuenta</a>
             </div>
         </div>
-        <div>
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle"><img src="../assets/menu.png" alt=""></label>
             <nav class="barraDeNavegacion">
                 <ul>
                     <li class="botonesBarra">
@@ -61,128 +65,125 @@
                     <h3>Correo: kevinguidolinkg@gmail.com</h3>
                 </div>
             </nav>
-        </div>
     </header>
     <main id="mainForm">
         <div id="divForm">
             <h1>FORMULARIO</h1>
         </div>
         <div id="fondoForm">
-            <div>
-                <form action="" class="inputFormulario">
-                    <div class="inputFormDiv">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="inputForm" required>
+            <form action="" class="inputFormulario">
+                <div class="inputFormDiv">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="dni">Número de DNI</label>
+                    <input type="text" id="dni" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="tel" id="telefono" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="domicilio">Domicilio (Calle y altura)</label>
+                    <input type="text" id="domicilio" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="localidad" class="inputForm" required>
+                </div>
+                <div class="Radios">
+                    <label for="tipoVivienda">¿En qué tipo de vivienda habitás?</label>
+                    <div>
+                        <input type="radio" name="tVivienda" class="tipoVivienda" required>Casa
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" class="inputForm" required>
+                    <div>
+                        <input type="radio" name="tVivienda" class="tipoVivienda">Departamento
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="dni">Número de DNI</label>
-                        <input type="text" id="dni" class="inputForm" required>
+                </div>
+                <div class="Radios">
+                    <label for="situacionVivienda">En qué situación habitas la vivienda?</label>
+                    <div>
+                        <input type="radio" name="sVivienda" class="situacionVivienda" required>Propietario
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="telefono">Teléfono de contacto</label>
-                        <input type="tel" id="telefono" class="inputForm" required>
+                    <div>
+                        <input type="radio" name="sVivienda" class="situacionVivienda">Inquilino
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="domicilio">Domicilio (Calle y altura)</label>
-                        <input type="text" id="domicilio" class="inputForm" required>
+                </div>
+                <div class="Radios">
+                    <label for="preferenciaAnimal">¿Qué mascotas te interesan?</label>
+                    <div>
+                        <input type="radio" name="pAnimal" class="preferenciaAnimal" required>Perros
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="localidad">Localidad</label>
-                        <input type="text" id="localidad" class="inputForm" required>
+                    <div>
+                        <input type="radio" name="pAnimal" class="preferenciaAnimal">Gatos
                     </div>
-                    <div class="Radios">
-                        <label for="tipoVivienda">¿En qué tipo de vivienda habitás?</label>
-                        <div>
-                            <input type="radio" name="tVivienda" class="tipoVivienda" required>Casa
-                        </div>
-                        <div>
-                            <input type="radio" name="tVivienda" class="tipoVivienda">Departamento
-                        </div>
+                    <div>
+                        <input type="radio" name="pAnimal" class="preferenciaAnimal">Ambos
                     </div>
-                    <div class="Radios">
-                        <label for="situacionVivienda">En qué situación habitas la vivienda?</label>
-                        <div>
-                            <input type="radio" name="sVivienda" class="situacionVivienda" required>Propietario
-                        </div>
-                        <div>
-                            <input type="radio" name="sVivienda" class="situacionVivienda">Inquilino
-                        </div>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="eMail">E-mail</label>
+                    <input type="email" id="eMail" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="perfilFB">Perfil de Facebook</label>
+                    <input type="text" id="perfilFB" class="inputForm">
+                </div>
+                <div class="inputFormDiv">
+                    <label for="perfilIG">Perfil de Instagram</label>
+                    <input type="text" id="perfilIG" class="inputForm">
+                </div>
+                <div id="porqueRedes">
+                    <h2>*Por qué me piden mis redes sociales?</h2>
+                    <h3>Lo hacemos para no perder contacto con la mascota, mantener un seguimiento preciso y así
+                        proteger a la misma.</h3>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="personasEnCasa">¿Con quién vives y qué edades tienen esas personas?</label>
+                    <input type="text" id="personasEnCasa" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="animalesEnCasa">¿Tiene animales?<br>(En caso de que sí, indica cuáles, sus edades y
+                        si están castrados)</label>
+                    <input type="text" id="animalesEnCasa" class="inputForm" required>
+                </div>
+                <div class="inputFormDiv">
+                    <label for="viaje">¿Qué harías con el animal en caso de realizar un viaje de varios
+                        días?</label>
+                    <input type="text" id="viaje" class="inputForm" required>
+                </div>
+                <div class="Radios">
+                    <label for="cercaniaVet">Tienes un veterinario cercano o de confianza?</label>
+                    <div>
+                        <input type="radio" name="cercania" class="cercaniaVet" required>Sí
                     </div>
-                    <div class="Radios">
-                        <label for="preferenciaAnimal">¿Qué mascotas te interesan?</label>
-                        <div>
-                            <input type="radio" name="pAnimal" class="preferenciaAnimal" required>Perros
-                        </div>
-                        <div>
-                            <input type="radio" name="pAnimal" class="preferenciaAnimal">Gatos
-                        </div>
-                        <div>
-                            <input type="radio" name="pAnimal" class="preferenciaAnimal">Ambos
-                        </div>
+                    <div>
+                        <input type="radio" name="cercania" class="cercaniaVet">No
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="eMail">E-mail</label>
-                        <input type="email" id="eMail" class="inputForm" required>
+                </div>
+                <div class="Radios">
+                    <label for="redRejas">¿Tienes rejas/red en tus ventanas y balcones?</label>
+                    <div class="gridRejas">
+                        <input type="radio" name="redRejas" class="redRejas" required>Sí, tengo red.
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="perfilFB">Perfil de Facebook</label>
-                        <input type="text" id="perfilFB" class="inputForm">
+                    <div class="gridRejas">
+                        <input type="radio" name="redRejas" class="redRejas">Sí, tengo rejas.
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="perfilIG">Perfil de Instagram</label>
-                        <input type="text" id="perfilIG" class="inputForm">
+                    <div class="gridRejas">
+                        <input type="radio" name="redRejas" class="redRejas"><h5>No, pero voy a colocar.</h5>
                     </div>
-                    <div id="porqueRedes">
-                        <h2>*Por qué me piden mis redes sociales?</h2>
-                        <h3>Lo hacemos para no perder contacto con la mascota, mantener un seguimiento preciso y así
-                            proteger a la misma.</h3>
+                    <div class="gridRejas">
+                        <input type="radio" name="redRejas" class="redRejas"><h5>No, no está en mis planes colocarlo.</h5>
                     </div>
-                    <div class="inputFormDiv">
-                        <label for="personasEnCasa">¿Con quién vives y qué edades tienen esas personas?</label>
-                        <input type="text" id="personasEnCasa" class="inputForm" required>
-                    </div>
-                    <div class="inputFormDiv">
-                        <label for="animalesEnCasa">¿Tiene animales?<br>(En caso de que sí, indica cuáles, sus edades y
-                            si están castrados)</label>
-                        <input type="text" id="animalesEnCasa" class="inputForm" required>
-                    </div>
-                    <div class="inputFormDiv">
-                        <label for="viaje">¿Qué harías con el animal en caso de realizar un viaje de varios
-                            días?</label>
-                        <input type="text" id="viaje" class="inputForm" required>
-                    </div>
-                    <div class="Radios">
-                        <label for="cercaniaVet">Tienes un veterinario cercano o de confianza?</label>
-                        <div>
-                            <input type="radio" name="cercania" class="cercaniaVet" required>Sí
-                        </div>
-                        <div>
-                            <input type="radio" name="cercania" class="cercaniaVet">No
-                        </div>
-                    </div>
-                    <div class="Radios">
-                        <label for="redRejas">¿Tienes rejas/red en tus ventanas y balcones?</label>
-                        <div>
-                            <input type="radio" name="redRejas" class="redRejas" required>Sí, tengo red.
-                        </div>
-                        <div>
-                            <input type="radio" name="redRejas" class="redRejas">Sí, tengo rejas.
-                        </div>
-                        <div>
-                            <input type="radio" name="redRejas" class="redRejas">No, pero voy a colocar.
-                        </div>
-                        <div>
-                            <input type="radio" name="redRejas" class="redRejas">No, no está en mis planes colocarlo.
-                        </div>
-                    </div>
-                    <div class="inputFormDiv enviarBoton">
-                        <input type="submit" value="ENVIAR" id="botonEnviar">
-                    </div>
-            </div>
+                </div>
+                <div class="inputFormDiv enviarBoton">
+                    <input type="submit" value="ENVIAR" id="botonEnviar">
+                </div>
         </div>
     </main>
     <footer>
