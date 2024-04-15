@@ -1,0 +1,142 @@
+#divForm {
+    margin: 2rem;
+    margin-left: 10rem;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    background-color: rgba(245, 204, 160, .65);
+    border-radius: 2.5rem;
+}
+
+#divForm h1 {
+    margin: auto;
+}
+
+#fondoForm {
+    background-color: rgba(245, 204, 160, .60);
+    width: 39rem;
+    height: auto;   
+    border-radius: 3.125rem;
+    margin: 0rem 3rem 3rem 16rem;
+    margin-left: 16rem;
+    text-align: center;
+}
+
+
+.inputFormulario {
+    margin: 1rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    column-gap: 20px;
+    row-gap: 30px;
+    
+}
+.inputFormulario div :not(.Radios){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: .875rem;
+
+}
+.inputFormDiv {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Radios input{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B64E3E;
+    background-color: white;
+    margin: 0rem 1rem;
+}
+.Radios input:checked{
+    background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
+}
+.Radios div{
+    display: block;
+}
+.Radios label{
+    padding-left: 1rem;
+}
+
+.inputForm {
+    height: 2rem;
+    width: 18rem;
+    border-radius: .3125rem;
+    background-color: #FAEED1 ;
+    border-color: #B64E3E ;
+}
+
+#porqueRedes {
+    font-size: .625rem;
+    margin-left: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 7 ;
+}
+
+#porqueRedes h2 {
+    color: rgb(182, 78, 62);
+    justify-content: center;
+}
+
+#porqueRedes h3 {
+    color: black;
+}
+
+#botonEnviar {
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(182, 78, 62);
+    color: rgb(255, 255, 255);
+    border-radius: 1.875rem;
+    font-size: 1.5rem;
+    font-family: "Kadwa";
+    border-style: none;
+    display:flex;
+    justify-content: center;
+}
+
+.enviarBoton {
+    grid-column: 2 / 3;
+    grid-row: 10 / 11;
+}
+
+/* PÁGINA DE MISIÓN */
+#fondoMision {
+    background-color: rgba(245, 204, 160, .60);
+    width: 39rem;
+    height: auto;
+    border-radius: 3.125rem;
+    margin: 3rem;
+    margin-left: 7rem;
+    text-align: center;
+}
+
+#fondoMision div {
+    margin: 0rem 2rem;
+}
+
+#fondoMision div h3 {
+    font-size: .875rem;
+}
+
+#fondoMision div h1 {
+    font-size: 2.25rem;
+}
+
+#fondoMision div h4 {
+    font-size: 1.075rem;
+}
+
+#noRemun {
+    color: rgb(184, 54, 34);
+}

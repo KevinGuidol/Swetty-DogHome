@@ -1,0 +1,14 @@
+@media (max-width: 1000px) {
+    #Mision{
+        display: none;
+    }
+    #Cuenta {
+        display: none;
+    }
+    #mainInicio {
+        grid-template-columns: 25% 75%;
+    }
+    .divPresentacion {
+        justify-content: center;
+    }
+}

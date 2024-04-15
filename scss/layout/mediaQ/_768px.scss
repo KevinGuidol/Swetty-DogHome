@@ -1,0 +1,127 @@
+@media (max-width:915px) {
+    main {
+        background-position-x: -1rem;
+        background-position-y: 3rem;
+        background-size: 40rem;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 5rem;
+        justify-content:center;
+    }
+    .headerNavegacion {
+        height: 3.3rem;
+    }
+
+    #SDH {
+        width: 18rem;
+        img{
+            width: 14rem;
+        }
+    }
+    .barraDeNavegacion{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        border-radius: 0rem 0rem 1.25rem 1.25rem ;
+        ul {
+            grid-gap: 10px;
+            margin: 10px 0px 0px 0px;
+            justify-content: center;
+        }
+    }
+
+    .contacto {
+        text-align: center;
+        font-size: .6875rem;
+        h3 {
+            font-size: .625rem;
+            text-align: center;
+        }
+    }
+
+    header {
+        label{
+            display: inline-flex;
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+        }
+        #toggle:checked ~ .barraDeNavegacion { 
+            height: 100vh;
+            transition: 0.7s;
+            transform-style: flat;
+        }
+    }   
+
+    #Mision {
+        display: none;
+    }
+
+    #Cuenta {
+        display: none;
+    }
+
+    .barraDeNavegacion {
+        justify-content: space-around;
+        width: 100%;
+    }
+/* PÁGINA DE INICIO */
+
+    #mainInicio {
+        display: flex;
+        justify-content: center;
+    }
+
+/* PÁGINA DE FORMULARIO */
+
+    #mainForm {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #divForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 3rem;
+        margin: 2rem 0rem;
+        h1{
+            font-size: 1.3rem;
+        }
+    }
+
+
+    #fondoForm {
+        width: 90%;
+        margin: 0rem;
+    }
+
+    .inputFormulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputForm {
+        display: inline;
+    }
+
+    .Radios {
+        margin-left: 4rem;
+    }
+
+    #botonEnviar {
+        display: flex;
+        justify-content: center;
+    }
+}

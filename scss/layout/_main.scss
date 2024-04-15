@@ -1,0 +1,44 @@
+// MAIN GENERAL
+main {
+    background-image: url("../assets/Fondo.png");
+    background-position-x: 7rem;
+    background-position-y: 3.5rem;
+    background-size: 47rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+}
+// MAIN INDEX
+#mainInicio {
+    height: 35.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 45% 15% ;
+    grid-template-areas:". divPresentacion .";
+}
+// MAIN FORMULARIO
+#mainForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// MAIN MISIÓN
+#mainMision {
+    height: auto;
+    width: 100%;
+    margin-left: 19% ;
+}
+// MAIN ADOPCIONES
+#mainAdopciones {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+}
+// MAIN CUENTA
+#mainCuenta {
+    margin-left: 19%;
+    width: 81%;
+}

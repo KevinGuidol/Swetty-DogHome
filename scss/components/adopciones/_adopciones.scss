@@ -1,0 +1,77 @@
+.selecMascota {
+    select {
+        width: 300px;
+        height: 80px;
+        background-color: #B64E3E;
+        border-radius: 60px;
+        border-style: none;
+        font-size: 0.8rem;
+        font-family: "Kadwa";
+        color: white;
+        text-align: center;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    section {
+        background-color: rgb(243, 240, 202);
+        border-color: rgb(182, 78, 62);
+        border-style: solid;
+        border-radius: 1.5rem;
+        margin: 2rem;
+        width: 28rem;
+        justify-content:space-between;
+    }
+}
+
+.liDatos {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    img {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.fotoscard {
+    margin: 2rem 0.5rem;
+    width: 6rem;
+    border: 1px solid black;
+    border-radius: .625rem;
+}
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cardText {
+    display: flex;
+    flex-direction: row-reverse;
+    h2, h3 {
+        display: block;
+        font-size: 1rem;
+        margin-left: .25rem;
+    }
+    ul {
+        list-style: none;
+        display: inline;
+        margin-top: 1rem;
+    }
+}
+
+.consultarAdopcion {
+    background-color: rgb(182, 78, 62);
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    a {
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+/* PÁGINA DE INICIO */
+p {
+    span {
+    font-family: "Style Script";
+    }
+}
+
+.divPresentacion {
+    display: flex;
+    box-shadow: 1.25rem;
+    background-color: rgba(217, 217, 217, .60);
+    border-radius: 3.4375rem;
+    width: 21.875rem;
+    margin: 1rem;
+    grid-area: divPresentacion;
+}
+
+#textoPresentacion {
+    color: black;
+    margin: 1.5rem;
+    line-height: 2rem;
+
+}
+
+p {
+    font-size: 1.175rem;
+}
