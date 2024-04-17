@@ -3,7 +3,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row-reverse;
-    background-color: #E1AA74;
+    background-color: map-get($colores , menu );
     width: 100%;
     height: 4.5rem;
     position: sticky;
@@ -42,10 +42,11 @@ header {
 
     .barraDeNavegacion {
         width: 25%;
-        background-color: #B99470;
+        background-color: map-get($colores, navbar );
         border-radius: 0rem 1.25rem 1.25rem 0rem;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         height: 100vh;
         ul {
             display: grid;

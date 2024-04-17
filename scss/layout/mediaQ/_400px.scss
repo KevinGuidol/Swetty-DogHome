@@ -1,0 +1,106 @@
+@media (max-width:400px) {
+
+    
+    /* *{
+        border-style: solid;
+        border-color: red;
+        border-width: 1px;
+    } */
+
+    main {
+        background-position-x: -4rem ;
+        background-position-y: 2rem ;
+        background-size: 37rem;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+#textoFooter {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#SDH {
+    width:8rem;
+    height: 32px;
+    img {
+        width: 7rem;
+    };
+}
+
+.headerNavegacion {
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.headerNavegacion div a img {
+    width: 30px;
+}
+
+/* PÁGINA DE INICIO */
+
+#mainInicio {
+    height: auto;
+}
+.divPresentacion {
+    width: 85%;
+    margin: 1rem 0rem;
+    text-align: center;
+    height: auto;
+}
+
+#textoPresentacion {
+    p {
+        font-size: 0.75rem ;
+        line-height: 0.8rem;
+        margin: 0rem;
+        width: 100%;
+    }
+}
+
+/* PÁGINA DE FORMULARIO */
+
+#fondoForm {
+    border-radius: 1rem;
+}
+
+.Radios {
+    margin: 0;
+}
+
+.gridRejas h5 {
+    width: 70%;
+    line-height: 1rem;
+    text-align: start;
+}
+.gridRejas {
+    margin-bottom: 0.5rem;
+}
+
+.inputForm {
+    height: 1.7rem;
+    width: 80%;
+    border-style: solid;
+}
+
+#botonEnviar {
+    width: 10rem;
+}
+
+}

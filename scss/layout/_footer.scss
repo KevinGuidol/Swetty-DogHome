@@ -4,10 +4,9 @@ footer {
     grid-template-areas:
     ". tFooter .";
     width: 100%;
-    position: fixed;
+    position: static;
     bottom: 0;
-    position:static;
-    background-color: rgba(0, 0, 0, 100);
+    background-color: map-get($colores, fondoFooter );
     border: none;
     div {
         grid-area: tFooter;

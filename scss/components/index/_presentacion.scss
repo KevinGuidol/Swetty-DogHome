@@ -8,7 +8,7 @@ p {
 .divPresentacion {
     display: flex;
     box-shadow: 1.25rem;
-    background-color: rgba(217, 217, 217, .60);
+    background-color: map-get($colores, cardIndex );
     border-radius: 3.4375rem;
     width: 21.875rem;
     margin: 1rem;

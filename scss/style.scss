@@ -12,118 +12,12 @@
 // COMPONENTS
 @import "./components/index/presentacion.scss";
 @import "./components/formularios/formulario.scss";
+@import "./components/mision/mision.scss";
 @import "./components/adopciones/adopciones.scss";
 @import "./components/cuenta/cuenta.scss";
 // RESPONSIVE
 @import "./layout/mediaQ/1302px.scss";
 @import "./layout/mediaQ/1000px.scss";
-@import "./layout/mediaQ/953px.scss";
-@import "./layout/mediaQ/768px.scss";
-@import "./layout/mediaQ/556px.scss";
-@import "./layout/mediaQ/320px.scss";
-
-
-@media (max-width:320px) {
-
-    /* *{
-        border-style: solid;
-        border-color: red;
-        border-width: 1px;
-    } */
-
-    main {
-        background-position-x: -4rem ;
-        background-position-y: 2rem ;
-        background-size: 27rem;
-    }
-
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-#textoFooter {
-    font-size: 0.5rem;
-    text-align: center;
-}
-
-header {
-    display: flex;
-    width: 100%;
-    height: 4rem;
-    align-items: center;
-    justify-content: center;
-}
-
-#SDH img {
-    width: 7rem;
-}
-
-#SDH {
-    width:8rem;
-    height: 32px;
-}
-
-.headerNavegacion {
-    display: flex;
-    height: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-}
-
-.headerNavegacion div a img {
-    width: 30px;
-}
-
-/* PÁGINA DE INICIO */
-
-#mainInicio {
-    height: auto;
-}
-.divPresentacion {
-    width: 97%;
-    margin: 1rem 0rem;
-    text-align: center;
-    height: auto;
-}
-
-#textoPresentacion p {
-    font-size: 0.75rem ;
-    line-height: 0.8rem;
-    margin: 0rem;
-    width: 100%;
-}
-
-/* PÁGINA DE FORMULARIO */
-
-#fondoForm {
-    border-radius: 1rem;
-}
-
-.Radios {
-    margin: 0;
-}
-
-.gridRejas h5 {
-    width: 70%;
-    line-height: 1rem;
-    text-align: start;
-}
-.gridRejas {
-    margin-bottom: 0.5rem;
-}
-
-.inputForm {
-    height: 1.7rem;
-    width: 11rem;
-    border-style: solid;
-}
-
-#botonEnviar {
-    width: 10rem;
-}
-
-}
+@import "./layout/mediaQ/915px.scss";
+@import "./layout/mediaQ/590px.scss";
+@import "./layout/mediaQ/400px.scss";

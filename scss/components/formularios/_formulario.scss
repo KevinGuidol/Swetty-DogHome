@@ -4,21 +4,22 @@
     text-align: center;
     width: 15rem;
     height: 4rem;
-    background-color: rgba(245, 204, 160, .65);
+    background-color: map-get($colores , fondoCards );
     border-radius: 2.5rem;
 }
 
-#divForm h1 {
+#divForm {
+    h1 {
     margin: auto;
+    }
 }
 
 #fondoForm {
-    background-color: rgba(245, 204, 160, .60);
+    background-color: map-get($colores, fondoCards );
     width: 39rem;
     height: auto;   
     border-radius: 3.125rem;
     margin: 0rem 3rem 3rem 16rem;
-    margin-left: 16rem;
     text-align: center;
 }
 
@@ -30,15 +31,13 @@
     grid-template-rows: repeat(10, auto);
     column-gap: 20px;
     row-gap: 30px;
-    
-}
-.inputFormulario div :not(.Radios){
+    div :not(.Radios){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     font-size: .875rem;
-
+    }
 }
 .inputFormDiv {
     height: auto;
@@ -47,33 +46,35 @@
     align-items: center;
     justify-content: center;
 }
-.Radios input{
-    appearance: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #B64E3E;
-    background-color: white;
-    margin: 0rem 1rem;
+.Radios {
+    input{
+        appearance: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: map-get($colores, cardBorder );
+        background-color: white;
+        margin: 0rem 1rem;
+    }
+    input:checked{
+        background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
+    }
+    div{
+        display: block;
+    }
+    label{
+        padding-left: 1rem;
+    }
 }
-.Radios input:checked{
-    background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
-}
-.Radios div{
-    display: block;
-}
-.Radios label{
-    padding-left: 1rem;
-}
-
 .inputForm {
     height: 2rem;
-    width: 18rem;
+    width: 80%;
     border-radius: .3125rem;
-    background-color: #FAEED1 ;
-    border-color: #B64E3E ;
+    background-color: map-get($colores, inputInterior );
+    border-color: map-get($colores, cardBorder );
+    border-style: solid;
 }
 
 #porqueRedes {
@@ -95,8 +96,8 @@
 #botonEnviar {
     width: 12rem;
     height: 3rem;
-    background-color: rgb(182, 78, 62);
-    color: rgb(255, 255, 255);
+    background-color: map-get($colores, botones );
+    color: map-get($colores, fuenteBotones );
     border-radius: 1.875rem;
     font-size: 1.5rem;
     font-family: "Kadwa";
@@ -108,35 +109,4 @@
 .enviarBoton {
     grid-column: 2 / 3;
     grid-row: 10 / 11;
-}
-
-/* PÁGINA DE MISIÓN */
-#fondoMision {
-    background-color: rgba(245, 204, 160, .60);
-    width: 39rem;
-    height: auto;
-    border-radius: 3.125rem;
-    margin: 3rem;
-    margin-left: 7rem;
-    text-align: center;
-}
-
-#fondoMision div {
-    margin: 0rem 2rem;
-}
-
-#fondoMision div h3 {
-    font-size: .875rem;
-}
-
-#fondoMision div h1 {
-    font-size: 2.25rem;
-}
-
-#fondoMision div h4 {
-    font-size: 1.075rem;
-}
-
-#noRemun {
-    color: rgb(184, 54, 34);
 }

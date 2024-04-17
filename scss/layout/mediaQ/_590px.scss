@@ -1,0 +1,72 @@
+@media (max-width:590px) {
+    main {
+        background-size: cover;
+    }
+    header {
+        width: 100%;
+        align-items: center;
+    }
+    #textoFooter {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    #SDH {
+        padding: 10px;
+        img {
+            width: 9rem;
+        }
+    }
+    #mainInicio {
+        height: auto;
+    }
+    #mainMision {
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #fondoMision {
+        margin: 0;
+        width: 90%;
+        border-radius: 2rem;
+        div {
+            margin: 5%;
+            h1 {
+                font-size: 1.3rem;
+                line-height: 1.7rem;
+            }
+            h2 {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin: 0.5rem 0rem;
+            }
+            h3 {
+                line-height: 1rem;
+                font-size: 0.7rem;
+            }
+            h4 {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin: 0.5rem 0rem;
+            }
+            h5 {
+                font-size: 0.75rem;
+                line-height: 1rem;
+            }
+        }
+    }
+    .headerNavegacion {
+        div {
+            a {
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+    .textoPresentacion {
+        p{
+            line-height: 1rem;
+        }
+    }
+}

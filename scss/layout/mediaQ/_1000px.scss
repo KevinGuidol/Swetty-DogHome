@@ -11,4 +11,15 @@
     .divPresentacion {
         justify-content: center;
     }
+    #fondoForm {
+        div{ 
+            font-size: 0.6rem;
+            h2 , h3 , h5 {
+                font-size: 0.6rem;
+            }
+            label {
+                font-size: 0.6rem;
+            }
+        }
+    }
 }

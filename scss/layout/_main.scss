@@ -3,7 +3,7 @@ main {
     background-image: url("../assets/Fondo.png");
     background-position-x: 7rem;
     background-position-y: 3.5rem;
-    background-size: 47rem;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
@@ -27,7 +27,7 @@ main {
 #mainMision {
     height: auto;
     width: 100%;
-    margin-left: 19% ;
+    padding-left: 25%;
 }
 // MAIN ADOPCIONES
 #mainAdopciones {
@@ -39,6 +39,6 @@ main {
 }
 // MAIN CUENTA
 #mainCuenta {
-    margin-left: 19%;
-    width: 81%;
+    padding-left: 25%;
+    width: 100%;
 }
