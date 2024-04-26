@@ -103,4 +103,45 @@ header {
     width: 10rem;
 }
 
+// PÁGINA DE CUENTA
+#divCuenta {
+    border-radius: 1.5rem;
+}
+#cambioCorreo {
+    width: 12rem;
+    font-size: 0.8rem;
+}
+
+#cambioContraseña {
+    width: 10rem;
+    font-size: 0.9rem;
+}
+.elegirPref {
+    font-size: 0.7rem;
+    div {
+        p {
+        font-size: 0.6rem;
+        }
+    }
+    input {
+        height: 20px;
+        width: 20px;
+        border-width: 1px;
+    }
+}
+
+#cambioOp {
+    h2 {
+    font-size: 0.7rem;
+    }
+}
+
+.comunicarse {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+    #actualizarForm {
+        width: 12rem;
+    }
 }

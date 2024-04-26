@@ -69,4 +69,31 @@
             line-height: 1rem;
         }
     }
+    //PÁGINA DE CUENTA
+
+    #actualizarForm {
+        height: 2.5rem;
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    #nombreDomicilio {
+        div {
+            h2 {
+                font-size: 0.8rem;
+            }
+            h3 {
+                font-size: 0.6rem;
+            }
+        }
+    }
+    #infoCorreo {
+        h2 {
+            font-size: 0.8rem;
+        }
+        h3 {
+            font-size: 0.6rem;
+        }
+    }
 }
+

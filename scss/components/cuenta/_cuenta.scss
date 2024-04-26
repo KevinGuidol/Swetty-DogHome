@@ -1,18 +1,11 @@
 #divCuenta {
-    margin: 0rem 0rem 2rem 10%;
     background-color: map-get($colores , fondoCards );
-    width: 37rem;
+    width: 100%;
     border-radius: 3.125rem;
-    section div , section form{
-        margin-left: 1rem;
-    }
-    >section>article {
-        font-size: 1rem;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap ;
-        align-items: center;
-        justify-content: center;
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
         img{
         width: fit-content;
         height: fit-content;
@@ -28,25 +21,42 @@
     h3 {
     font-size: 0.8rem;
     }
-}
-
 #nombreDomicilio {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-#divFondoCuenta div {
+#cuentaTitulo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
 }
 #cambioDomicilio {
-    text-decoration:underline;
-    color: blue;
-    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    a {
+        text-decoration:underline;
+        color: blue;
+        font-size: 0.7rem;
+    }
 }
+
+#cambioCuenta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    input {
+        margin: 0.5rem;
+    }
+}
+
 #cambioContraseña {
     background-color: map-get($colores , botones );
     height: 2rem;
@@ -55,8 +65,7 @@
     border-style: none;
     font-size: 1rem;
     font-family: "Kadwa";
-    color: white;
-    margin-left: 1rem;
+    color: map-get($colores , fuenteBotones );
 }
 #cambioCorreo {
     background-color: map-get($colores , botones );
@@ -66,14 +75,31 @@
     border-style: none;
     font-size: 1rem;
     font-family: "Kadwa";
-    color: white;
-    margin-right: 1rem;
+    color: map-get($colores , fuenteBotones );
+}
+#formCuenta{
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#infoCorreo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .elegirPref {
     display: flex;
     flex-direction: column;
     align-items:center;
     margin-top: 1rem;
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     input{
         appearance: none;
         height: 30px;
@@ -82,7 +108,7 @@
         border-style: solid;
         border-width: 2px;
         border-color: map-get($colores, cardBorder );
-        background-color: white;
+        background-color: map-get($colores , fuenteBotones );
         margin: 0rem 1rem;
         &:checked{
             background-image: radial-gradient(rgb(180, 101, 89)0%, rgb(180, 101, 89)30%, transparent 50%);
@@ -95,6 +121,8 @@
 }
 .comunicarse {
     color: blue;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 #actualizarForm {
@@ -105,6 +133,6 @@
     border-style: none;
     font-size: 1.3rem;
     font-family: "Kadwa";
-    color: white;
-    margin-right: 1rem;
+    color: map-get($colores , fuenteBotones );
+    margin-bottom: 1rem;
 }

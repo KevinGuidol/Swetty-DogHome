@@ -107,15 +107,17 @@ main {
   padding-left: 25%; }
 
 #mainAdopciones {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20%; }
+  padding-left: 25%; }
 
 #mainCuenta {
   padding-left: 25%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 footer {
   display: grid;
@@ -346,45 +348,56 @@ p {
     text-align: center; }
 
 #divCuenta {
-  margin: 0rem 0rem 2rem 10%;
   background-color: rgba(245, 204, 160, 0.65);
-  width: 37rem;
-  border-radius: 3.125rem; }
-  #divCuenta section div, #divCuenta section form {
-    margin-left: 1rem; }
-  #divCuenta > section > article {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; }
-    #divCuenta > section > article img {
-      width: fit-content;
-      height: fit-content; }
-  #divCuenta h1 {
-    font-size: 2rem; }
-  #divCuenta h2 {
-    font-size: 1rem;
-    padding-right: 0.5rem; }
-  #divCuenta h3 {
-    font-size: 0.8rem; }
+  width: 100%;
+  border-radius: 3.125rem;
+  margin: 5% 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #divCuenta img {
+    width: fit-content;
+    height: fit-content; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1rem;
+  padding-right: 0.5rem; }
+
+h3 {
+  font-size: 0.8rem; }
 
 #nombreDomicilio {
   display: flex;
-  flex-direction: row; }
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  #nombreDomicilio div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-#divFondoCuenta div {
+#cuentaTitulo {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem; }
+  align-items: center; }
 
 #cambioDomicilio {
-  text-decoration: underline;
-  color: blue;
-  font-size: 0.7rem; }
+  display: flex;
+  justify-content: center; }
+  #cambioDomicilio a {
+    text-decoration: underline;
+    color: blue;
+    font-size: 0.7rem; }
+
+#cambioCuenta {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  #cambioCuenta input {
+    margin: 0.5rem; }
 
 #cambioContraseña {
   background-color: #b64e3e;
@@ -394,8 +407,7 @@ p {
   border-style: none;
   font-size: 1rem;
   font-family: "Kadwa";
-  color: white;
-  margin-left: 1rem; }
+  color: white; }
 
 #cambioCorreo {
   background-color: #b64e3e;
@@ -405,14 +417,28 @@ p {
   border-style: none;
   font-size: 1rem;
   font-family: "Kadwa";
-  color: white;
-  margin-right: 1rem; }
+  color: white; }
+
+#formCuenta > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#infoCorreo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .elegirPref {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem; }
+  .elegirPref div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
   .elegirPref input {
     appearance: none;
     height: 30px;
@@ -430,7 +456,9 @@ p {
   text-align: center; }
 
 .comunicarse {
-  color: blue; }
+  color: blue;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
 
 #actualizarForm {
   background-color: #b64e3e;
@@ -441,7 +469,7 @@ p {
   font-size: 1.3rem;
   font-family: "Kadwa";
   color: white;
-  margin-right: 1rem; }
+  margin-bottom: 1rem; }
 
 @media (max-width: 1302px) {
   #SDH {
@@ -457,6 +485,9 @@ p {
   #fondoForm {
     width: 90%;
     margin: 0; } }
+
+#cambioCuenta {
+  flex-direction: column; }
 
 @media (max-width: 1000px) {
   #Mision {
@@ -562,7 +593,11 @@ p {
     justify-content: center; }
   #mainMision {
     padding: 0;
-    background-size: cover; } }
+    background-size: cover; }
+  #mainCuenta {
+    padding: 0; }
+  #cambioCuenta input {
+    margin: 0.5rem; } }
 
 @media (max-width: 590px) {
   main {
@@ -610,7 +645,19 @@ p {
   .headerNavegacion div a img {
     width: 45px; }
   .textoPresentacion p {
-    line-height: 1rem; } }
+    line-height: 1rem; }
+  #actualizarForm {
+    height: 2.5rem;
+    width: 15rem;
+    font-size: 1rem; }
+  #nombreDomicilio div h2 {
+    font-size: 0.8rem; }
+  #nombreDomicilio div h3 {
+    font-size: 0.6rem; }
+  #infoCorreo h2 {
+    font-size: 0.8rem; }
+  #infoCorreo h3 {
+    font-size: 0.6rem; } }
 
 @media (max-width: 400px) {
   /* *{
@@ -678,4 +725,27 @@ p {
     width: 80%;
     border-style: solid; }
   #botonEnviar {
-    width: 10rem; } }
+    width: 10rem; }
+  #divCuenta {
+    border-radius: 1.5rem; }
+  #cambioCorreo {
+    width: 12rem;
+    font-size: 0.8rem; }
+  #cambioContraseña {
+    width: 10rem;
+    font-size: 0.9rem; }
+  .elegirPref {
+    font-size: 0.7rem; }
+    .elegirPref div p {
+      font-size: 0.6rem; }
+    .elegirPref input {
+      height: 20px;
+      width: 20px;
+      border-width: 1px; }
+  #cambioOp h2 {
+    font-size: 0.7rem; }
+  .comunicarse {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem; }
+  #actualizarForm {
+    width: 12rem; } }

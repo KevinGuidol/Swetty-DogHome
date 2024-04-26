@@ -22,6 +22,8 @@
                 <a href="#" id="Cuenta">Cuenta</a>
             </div>
         </div>
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle"><img src="../assets/menu.png" alt=""></label>
         <nav class="barraDeNavegacion">
             <ul>
                 <li class="botonesBarra">
@@ -64,55 +66,51 @@
     </header>
     <main id="mainCuenta">
         <div id="divCuenta">
-            <section>
-                <article>
-                    <img src="../assets/User.png" alt="">
-                    <h1>Cuenta</h1>
-                </article>
-            </section>
-            <section>
-                <div id="divFondoCuenta">
-                    <section id="nombreDomicilio">
-                        <div>
-                            <h2>Nombre y Apellido:</h2>
-                            <h3>Kevin Guidolin</h3>
-                        </div>
-                        <div>
-                            <h2>Domicilio:</h2>
-                            <h3>San Juan 210 - Mendoza</h3>
-                        </div>
-                    </section>
+            <div id="cuentaTitulo">
+                <img src="../assets/User.png" alt="">
+                <h1>Cuenta</h1>
+            </div>
+            <div>
+                <div id="nombreDomicilio">
                     <div>
-                        <a href="" id="cambioDomicilio">Cambiar domicilio</a>
+                        <h2>Nombre y Apellido:</h2>
+                        <h3>Kevin Guidolin</h3>
                     </div>
                     <div>
-                        <h2>Dirección de correo electrónico:</h2>
-                        <h3>kevinguidolinkg@gmail.com</h3>
+                        <h2>Domicilio:</h2>
+                        <h3>San Juan 210 - Mendoza</h3>
                     </div>
-                    <section>
-                        <div>
-                            <input type="button" value="Cambiar dirección de correo" id="cambioCorreo">
-                            <input type="button" value="Cambiar contraseña" id="cambioContraseña">
-                        </div>
-                        <form action="" class="elegirPref">
-                            <label for="prefMascota">¿Qué mascotas te interesan?</label>
-                            <div><input type="radio" name="prefMascotas" class="prefMascota">Perros</div>
-                            <div><input type="radio" name="prefMascotas" class="prefMascota">Gatos</div>
-                            <div><input type="radio" name="prefMascotas" class="prefMascota">Ambos</div>
-                        </form>
-                        <div id="cambioOp">
-                            <h2>¿Cambiaste de opinión o tienes problemas para poder cuidar correctamente a quien
-                                adoptaste?</h2>
-                        </div>
-                        <div>
-                            <a href="" class="comunicarse">Comunicate con nosotros</a>
-                        </div>
-                        <div>
-                            <input type="button" value="Actualizar Formulario" id="actualizarForm">
-                        </div>
                 </div>
-            </section>
-        </div>
+                <div id="cambioDomicilio">
+                    <a href="">Cambiar domicilio</a>
+                </div>
+                <div id="infoCorreo">
+                    <h2>Dirección de correo electrónico:</h2>
+                    <h3>kevinguidolinkg@gmail.com</h3>
+                </div>
+                <div id="formCuenta">
+                    <div id="cambioCuenta">
+                        <input type="button" value="Cambiar dirección de correo" id="cambioCorreo">
+                        <input type="button" value="Cambiar contraseña" id="cambioContraseña">
+                    </div>
+                    <form action="" class="elegirPref">
+                        <label for="prefMascota">¿Qué mascotas te interesan?</label>
+                        <div><input type="radio" name="prefMascotas" class="prefMascota"><p>Perros</p></div>
+                        <div><input type="radio" name="prefMascotas" class="prefMascota"><p>Gatos</p></div>
+                        <div><input type="radio" name="prefMascotas" class="prefMascota"><p>Ambos</p></div>
+                    </form>
+                    <div id="cambioOp">
+                        <h2>¿Cambiaste de opinión o tienes problemas para poder cuidar correctamente a quien
+                            adoptaste?</h2>
+                    </div>
+                    <div>
+                        <a href="" class="comunicarse">Comunicate con nosotros</a>
+                    </div>
+                    <div>
+                        <input type="button" value="Actualizar Formulario" id="actualizarForm">
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div>
