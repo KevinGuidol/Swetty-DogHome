@@ -1,0 +1,58 @@
+@media (max-width:750px) {
+
+    header {
+        z-index: 3;
+    }
+    .card {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        section {
+            width: 100%;
+            margin: 1rem 0rem;
+            justify-content: start;
+        }
+    }
+
+    .fotosCard {
+        width: 10%;
+    }
+
+    .liDatos {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 0.7rem;
+        }
+        h3 {
+            font-size: 0.7rem;
+        }
+    }
+    .cardText {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+        }
+    }
+    .consultarAdopcion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 5%;
+        a{
+        padding: 0px;
+        }
+    }
+
+    .cardText {
+        position: relative;
+        div {
+            position: absolute;
+        }
+    }
+
+
+}

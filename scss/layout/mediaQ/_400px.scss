@@ -31,6 +31,22 @@ header {
     height: 4rem;
     align-items: center;
     justify-content: center;
+    #toggle:checked ~ .barraDeNavegacion{
+    height: 87.5vh
+    }   
+}
+.barraDeNavegacion {
+    ul{
+        li{
+            a {
+                font-size: 0.5rem;   
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
 }
 
 #SDH {
@@ -63,13 +79,14 @@ header {
     margin: 1rem 0rem;
     text-align: center;
     height: auto;
+    border-radius: 1rem;
 }
 
 #textoPresentacion {
+    margin: 0.5rem;
     p {
         font-size: 0.75rem ;
         line-height: 0.8rem;
-        margin: 0rem;
         width: 100%;
     }
 }
@@ -84,10 +101,12 @@ header {
     margin: 0;
 }
 
-.gridRejas h5 {
+.gridRejas {
+    h5 {
     width: 70%;
     line-height: 1rem;
     text-align: start;
+    }
 }
 .gridRejas {
     margin-bottom: 0.5rem;
@@ -99,22 +118,39 @@ header {
     border-style: solid;
 }
 
+.inputFormulario {
+    div :not(.Radios){   
+        flex-wrap: nowrap;
+    }
+}
+
 #botonEnviar {
-    width: 10rem;
+    width: 8rem;
 }
 
 // PÁGINA DE CUENTA
 #divCuenta {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
+#nombreDomicilio {
+    div{
+        flex-direction: column;
+    }
+}
+
 #cambioCorreo {
-    width: 12rem;
-    font-size: 0.8rem;
+    width: 10rem;
+    font-size: 0.6rem;
 }
 
 #cambioContraseña {
     width: 10rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+#infoCorreo {
+    h2{
+        text-align: center;
+    }
 }
 .elegirPref {
     font-size: 0.7rem;
@@ -131,9 +167,15 @@ header {
 }
 
 #cambioOp {
+    align-self: center;
+    width: 70%;
+    margin: 0 15%;
     h2 {
     font-size: 0.7rem;
     }
+}
+.comunicarse {
+    font-size: 0.7rem;
 }
 
 .comunicarse {
@@ -142,6 +184,43 @@ header {
 }
 
     #actualizarForm {
-        width: 12rem;
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+
+
+    //PÁGINA DE ADOPCIONES
+
+    #textoAdopciones {
+        h1 {
+            font-size: 1.3rem;
+        }
+    }
+
+    #elegirMascota {
+        width: 200px;
+        height: 60px;
+        font-size: 0.6rem;
+    }
+
+    .consultarAdopcion {
+        position: static;
+        width: 100%;
+        border-radius: 0;
+    }
+    .tarjeta {
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardText {
+        ul{
+            margin: 1rem;
+            li {
+                h2 {
+                    padding-right: 0;
+                }
+            }
+        }
     }
 }

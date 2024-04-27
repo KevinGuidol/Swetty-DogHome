@@ -95,5 +95,25 @@
             font-size: 0.6rem;
         }
     }
+
+    // PÁGINA DE ADOPCIONES 
+
+    .liDatos {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 0.5rem;
+        }
+        h3 {
+            font-size: 0.5rem;
+        }
+        img {
+            width: 100px;
+        }
+    }
+    .fotoscard {
+        margin:1rem 0.5rem ;
+    }
+
 }
 

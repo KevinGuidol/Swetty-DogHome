@@ -517,7 +517,7 @@ h3 {
   header {
     display: flex;
     width: 100%;
-    height: 5rem;
+    height: 20vh;
     justify-content: center; }
   .headerNavegacion {
     height: 3.3rem;
@@ -548,7 +548,7 @@ h3 {
     height: 25px;
     width: 25px; }
   header #toggle:checked ~ .barraDeNavegacion {
-    height: 100vh;
+    height: 85vh;
     transition: 0.7s;
     transform-style: flat; }
   #Mision {
@@ -597,7 +597,47 @@ h3 {
   #mainCuenta {
     padding: 0; }
   #cambioCuenta input {
-    margin: 0.5rem; } }
+    margin: 0.5rem; }
+  #mainAdopciones {
+    padding: 0; } }
+
+@media (max-width: 750px) {
+  header {
+    z-index: 3; }
+  .card {
+    width: 90%;
+    display: flex;
+    align-items: center; }
+    .card section {
+      width: 100%;
+      margin: 1rem 0rem;
+      justify-content: start; }
+  .fotosCard {
+    width: 10%; }
+  .liDatos {
+    display: flex;
+    align-items: center; }
+    .liDatos h2 {
+      font-size: 0.7rem; }
+    .liDatos h3 {
+      font-size: 0.7rem; }
+  .cardText ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0; }
+  .consultarAdopcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%; }
+    .consultarAdopcion a {
+      padding: 0px; }
+  .cardText {
+    position: relative; }
+    .cardText div {
+      position: absolute; } }
 
 @media (max-width: 590px) {
   main {
@@ -657,7 +697,18 @@ h3 {
   #infoCorreo h2 {
     font-size: 0.8rem; }
   #infoCorreo h3 {
-    font-size: 0.6rem; } }
+    font-size: 0.6rem; }
+  .liDatos {
+    display: flex;
+    align-items: center; }
+    .liDatos h2 {
+      font-size: 0.5rem; }
+    .liDatos h3 {
+      font-size: 0.5rem; }
+    .liDatos img {
+      width: 100px; }
+  .fotoscard {
+    margin: 1rem 0.5rem; } }
 
 @media (max-width: 400px) {
   /* *{
@@ -683,6 +734,13 @@ h3 {
     height: 4rem;
     align-items: center;
     justify-content: center; }
+    header #toggle:checked ~ .barraDeNavegacion {
+      height: 87.5vh; }
+  .barraDeNavegacion ul li a {
+    font-size: 0.5rem; }
+    .barraDeNavegacion ul li a img {
+      height: 30px;
+      width: 30px; }
   #SDH {
     width: 8rem;
     height: 32px; }
@@ -703,12 +761,14 @@ h3 {
     width: 85%;
     margin: 1rem 0rem;
     text-align: center;
-    height: auto; }
-  #textoPresentacion p {
-    font-size: 0.75rem;
-    line-height: 0.8rem;
-    margin: 0rem;
-    width: 100%; }
+    height: auto;
+    border-radius: 1rem; }
+  #textoPresentacion {
+    margin: 0.5rem; }
+    #textoPresentacion p {
+      font-size: 0.75rem;
+      line-height: 0.8rem;
+      width: 100%; }
   /* PÁGINA DE FORMULARIO */
   #fondoForm {
     border-radius: 1rem; }
@@ -724,16 +784,22 @@ h3 {
     height: 1.7rem;
     width: 80%;
     border-style: solid; }
+  .inputFormulario div :not(.Radios) {
+    flex-wrap: nowrap; }
   #botonEnviar {
-    width: 10rem; }
+    width: 8rem; }
   #divCuenta {
-    border-radius: 1.5rem; }
+    border-radius: 1rem; }
+  #nombreDomicilio div {
+    flex-direction: column; }
   #cambioCorreo {
-    width: 12rem;
-    font-size: 0.8rem; }
+    width: 10rem;
+    font-size: 0.6rem; }
   #cambioContraseña {
     width: 10rem;
-    font-size: 0.9rem; }
+    font-size: 0.7rem; }
+  #infoCorreo h2 {
+    text-align: center; }
   .elegirPref {
     font-size: 0.7rem; }
     .elegirPref div p {
@@ -742,10 +808,35 @@ h3 {
       height: 20px;
       width: 20px;
       border-width: 1px; }
-  #cambioOp h2 {
+  #cambioOp {
+    align-self: center;
+    width: 70%;
+    margin: 0 15%; }
+    #cambioOp h2 {
+      font-size: 0.7rem; }
+  .comunicarse {
     font-size: 0.7rem; }
   .comunicarse {
     margin-bottom: 2rem;
     margin-top: 0.5rem; }
   #actualizarForm {
-    width: 12rem; } }
+    width: 10rem;
+    font-size: 0.8rem; }
+  #textoAdopciones h1 {
+    font-size: 1.3rem; }
+  #elegirMascota {
+    width: 200px;
+    height: 60px;
+    font-size: 0.6rem; }
+  .consultarAdopcion {
+    position: static;
+    width: 100%;
+    border-radius: 0; }
+  .tarjeta {
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center; }
+  .cardText ul {
+    margin: 1rem; }
+    .cardText ul li h2 {
+      padding-right: 0; } }
