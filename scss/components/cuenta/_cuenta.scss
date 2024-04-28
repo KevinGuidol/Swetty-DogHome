@@ -3,9 +3,7 @@
     width: 100%;
     border-radius: 3.125rem;
     margin: 5% 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include dFlex (column , center , center , wrap );
         img{
         width: fit-content;
         height: fit-content;
@@ -22,25 +20,17 @@
     font-size: 0.8rem;
     }
 #nombreDomicilio {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include dFlex (row, space-evenly, none, wrap);
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dFlex (row, center, center, );
     }
 }
 
 #cuentaTitulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include dFlex (row, none, center, );
 }
 #cambioDomicilio {
-    display: flex;
-    justify-content: center;
+    @include dFlex (none, center, none, );
     a {
         text-decoration:underline;
         color: blue;
@@ -79,26 +69,17 @@
 }
 #formCuenta{
     >div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include dFlex (column, none, center, );
     }
 }
 #infoCorreo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include dFlex (row, center, none, wrap);
 }
 .elegirPref {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+    @include dFlex (column, none, center, );
     margin-top: 1rem;
     div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include dFlex (row, none, center, );
     }
     input{
         appearance: none;

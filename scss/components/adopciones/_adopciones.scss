@@ -12,8 +12,7 @@
     }
 }
 .card {
-    display: flex;
-    flex-direction: column;
+    @include dFlex (column , none , none , none);
     section {
         background-color: map-get($colores, cardAdopciones );
         border-color: map-get($colores , cardBorder );
@@ -26,9 +25,7 @@
 }
 
 .liDatos {
-    display: flex;
-    flex-direction: row ;
-    align-items: center;
+    @include dFlex (row , none , center , none);
     img {
         width: fit-content;
         height: fit-content;
@@ -42,13 +39,10 @@
     border-radius: .625rem;
 }
 .tarjeta {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include dFlex (row , none , none , wrap);
 }
 .cardText {
-    display: flex;
-    flex-direction: row-reverse;
+    @include dFlex (row-reverse, none, none,);
     h2, h3 {
         display: block;
         font-size: 1rem;

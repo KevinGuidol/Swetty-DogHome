@@ -8,10 +8,8 @@
     }
 // Página from
     #mainForm {
-        display: flex;
         padding-left: 25%;
-        justify-content: center;
-        align-items: center;
+        @include dFlex (none, center, center, );
     }
 
     #fondoForm {

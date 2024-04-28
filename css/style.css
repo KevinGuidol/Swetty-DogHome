@@ -16,9 +16,10 @@ html {
 
 header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: wrap;
   background-color: #e1aa74;
   width: 100%;
   height: 4.5rem;
@@ -30,22 +31,24 @@ header {
 .headerNavegacion {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: nowrap;
   width: 75%;
   height: 4.5rem; }
   .headerNavegacion div {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     height: 3.125rem; }
   .headerNavegacion a {
     display: flex;
+    flex-direction: none;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: nowrap; }
   .headerNavegacion > a {
     width: 27rem;
     height: 1.875rem;
@@ -58,10 +61,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: none;
+  flex-wrap: nowrap;
   height: 100vh; }
   .barraDeNavegacion ul {
     display: grid;
+    grid-template-columns: 1;
     grid-template-rows: repeat(7, 40px);
+    grid-template-areas: none;
     grid-gap: 20px;
     margin: 20px 0px 100px 30px; }
     .barraDeNavegacion ul li {
@@ -94,12 +101,16 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 40% 45% 15%;
-  grid-template-areas: ". divPresentacion ."; }
+  grid-template-rows: 1;
+  grid-template-areas: ". divPresentacion .";
+  grid-gap: 0; }
 
 #mainForm {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap; }
 
 #mainMision {
   height: auto;
@@ -110,7 +121,9 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-wrap: nowrap;
   padding-left: 25%; }
 
 #mainCuenta {
@@ -122,7 +135,9 @@ main {
 footer {
   display: grid;
   grid-template-columns: 30% 60% 10%;
+  grid-template-rows: 1;
   grid-template-areas: ". tFooter .";
+  grid-gap: none;
   width: 100%;
   position: static;
   bottom: 0;
@@ -133,8 +148,10 @@ footer {
     width: 100%;
     height: 4rem;
     display: flex;
+    flex-direction: none;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
 
 #textoFooter {
   color: white;
@@ -187,21 +204,23 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(10, auto);
-  column-gap: 20px;
-  row-gap: 30px; }
+  grid-template-areas: none;
+  grid-gap: none; }
   .inputFormulario div :not(.Radios) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
     font-size: .875rem; }
 
 .inputFormDiv {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  flex-wrap: nowrap; }
 
 .Radios input {
   appearance: none;
@@ -293,7 +312,10 @@ p {
 
 .card {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: none; }
   .card section {
     background-color: #f3f0ca;
     border-color: #b64e3e;
@@ -306,7 +328,9 @@ p {
 .liDatos {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  justify-content: none;
+  align-items: center;
+  flex-wrap: none; }
   .liDatos img {
     width: fit-content;
     height: fit-content; }
@@ -320,11 +344,16 @@ p {
 .tarjeta {
   display: flex;
   flex-direction: row;
+  justify-content: none;
+  align-items: none;
   flex-wrap: wrap; }
 
 .cardText {
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: nowrap; }
   .cardText h2, .cardText h3 {
     display: block;
     font-size: 1rem;
@@ -353,7 +382,9 @@ p {
   border-radius: 3.125rem;
   margin: 5% 5%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
   #divCuenta img {
     width: fit-content;
@@ -371,22 +402,30 @@ h3 {
 
 #nombreDomicilio {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: wrap; }
   #nombreDomicilio div {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
 
 #cuentaTitulo {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap; }
 
 #cambioDomicilio {
   display: flex;
-  justify-content: center; }
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: nowrap; }
   #cambioDomicilio a {
     text-decoration: underline;
     color: blue;
@@ -422,23 +461,30 @@ h3 {
 #formCuenta > div {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap; }
 
 #infoCorreo {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: none;
+  flex-wrap: wrap; }
 
 .elegirPref {
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-wrap: nowrap;
   margin-top: 1rem; }
   .elegirPref div {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    justify-content: none;
+    align-items: center;
+    flex-wrap: nowrap; }
   .elegirPref input {
     appearance: none;
     height: 30px;
@@ -478,10 +524,12 @@ h3 {
   #textoFooter {
     font-size: 0.65rem; }
   #mainForm {
-    display: flex;
     padding-left: 25%;
+    display: flex;
+    flex-direction: none;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
   #fondoForm {
     width: 90%;
     margin: 0; } }
@@ -512,13 +560,15 @@ h3 {
   footer {
     width: 100%;
     display: flex;
+    flex-direction: none;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: nowrap; }
   header {
     display: flex;
+    justify-content: center;
     width: 100%;
-    height: 20vh;
-    justify-content: center; }
+    height: 20vh; }
   .headerNavegacion {
     height: 3.3rem;
     width: 100%; }
@@ -571,8 +621,10 @@ h3 {
     background-size: cover; }
   #divForm {
     display: flex;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     width: 10rem;
     height: 3rem;
     margin: 2rem 0rem; }
@@ -606,7 +658,6 @@ h3 {
     z-index: 3; }
   .card {
     width: 90%;
-    display: flex;
     align-items: center; }
     .card section {
       width: 100%;
@@ -615,7 +666,6 @@ h3 {
   .fotosCard {
     width: 10%; }
   .liDatos {
-    display: flex;
     align-items: center; }
     .liDatos h2 {
       font-size: 0.7rem; }
@@ -625,11 +675,15 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: none;
+    flex-wrap: nowrap;
     margin: 0; }
   .consultarAdopcion {
     display: flex;
-    align-items: center;
+    flex-direction: none;
     justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     position: absolute;
     right: 5%; }
     .consultarAdopcion a {
@@ -722,18 +776,21 @@ h3 {
     background-size: 37rem; }
   footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: none;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: wrap; }
   #textoFooter {
     font-size: 0.5rem;
     text-align: center; }
   header {
     display: flex;
-    width: 100%;
-    height: 4rem;
+    flex-direction: none;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 4rem; }
     header #toggle:checked ~ .barraDeNavegacion {
       height: 87.5vh; }
   .barraDeNavegacion ul li a {
@@ -748,9 +805,11 @@ h3 {
       width: 7rem; }
   .headerNavegacion {
     display: flex;
-    height: 2rem;
+    flex-direction: none;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+    height: 2rem;
     top: 0; }
   .headerNavegacion div a img {
     width: 30px; }

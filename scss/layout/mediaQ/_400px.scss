@@ -14,10 +14,7 @@
     }
 
     footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        @include dFlex (none, center, center, wrap );
     }
 
 #textoFooter {
@@ -26,11 +23,9 @@
 }
 
 header {
-    display: flex;
+    @include dFlex (none, center, center, );
     width: 100%;
     height: 4rem;
-    align-items: center;
-    justify-content: center;
     #toggle:checked ~ .barraDeNavegacion{
     height: 87.5vh
     }   
@@ -58,10 +53,8 @@ header {
 }
 
 .headerNavegacion {
-    display: flex;
+    @include dFlex (none, space-between, center, );
     height: 2rem;
-    justify-content: space-between;
-    align-items: center;
     top: 0;
 }
 

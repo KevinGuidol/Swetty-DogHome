@@ -1,0 +1,15 @@
+@mixin dFlex ($fDirec , $justifyC , $alignI , $fWrap:nowrap) {
+    display: flex;
+    flex-direction: $fDirec ;
+    justify-content: $justifyC;
+    align-items: $alignI;
+    flex-wrap: $fWrap;
+}
+
+@mixin dGrid ($GTC , $GTR , $GTA , $gap) {
+    display: grid ;
+    grid-template-columns: $GTC ;
+    grid-template-rows: $GTR ;
+    grid-template-areas: $GTA ;
+    grid-gap: $gap ;
+}

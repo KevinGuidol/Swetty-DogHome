@@ -26,25 +26,15 @@
 
 .inputFormulario {
     margin: 1rem 0rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, auto);
-    column-gap: 20px;
-    row-gap: 30px;
+    @include dGrid (repeat(2, 1fr) , repeat(10, auto), none , none);
     div :not(.Radios){
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: .875rem;
+        @include dFlex (row , start , center , wrap);
+        font-size: .875rem;
     }
 }
 .inputFormDiv {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include dFlex (column , center , center ,);
 }
 .Radios {
     input{
@@ -102,7 +92,7 @@
     font-size: 1.5rem;
     font-family: "Kadwa";
     border-style: none;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
